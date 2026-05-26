@@ -43,3 +43,10 @@ Perfect anti-correlation → measurements are always opposite (**01** or **10**)
 Perfect anti-correlation + phase shift → opposite outcomes (**01**, **10**) with negative phase affecting interference.
 
 ---
+# QUANTUM ENTANGLEMENT (3-Qubit System)
+
+**GHZ States**- (Greenberger-Horne-Zeilinger states) represent type of multi-quvit entangled state, ususally 3 or more qubits, hence show entanglement shared across all qubits together.
+These states are more fraglie since measuring or loosing 1 qubit can destory entanglement of whole system.
+They demonstrate **Global Correlations**, showing full anti-correlation is impossible.
+
+---
