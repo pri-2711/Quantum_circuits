@@ -50,3 +50,87 @@ These states are more fraglie since measuring or loosing 1 qubit can destory ent
 They demonstrate **Global Correlations**, showing full anti-correlation is impossible.
 
 ---
+# QUANTUM TELEPORTATION (3-Qubit System)
+
+Transfers a quantum state using **entanglement + classical bits**.
+
+---
+
+## 1. Prepare Message State
+Apply:
+
+```text
+H(q₀)
+```
+
+State:
+
+<img width="120" height="40" alt="image" src="https://latex.codecogs.com/png.latex?\frac{|0\rangle+|1\rangle}{\sqrt2}" />
+
+**Nature:** Creates state ψ to teleport.
+
+---
+
+## 2. Create Entangled Pair
+Apply:
+
+```text
+H(q₁) → CNOT(q₁→q₂)
+```
+
+**Nature:** Forms Bell pair between q₁ and q₂.
+
+---
+
+## 3. Encode Message
+Apply:
+
+```text
+CNOT(q₀→q₁)
+H(q₀)
+```
+
+**Nature:** Mixes message with entangled system.
+
+---
+
+## 4. Measure
+Measure:
+
+```text
+q₀, q₁ → 00 / 01 / 10 / 11
+```
+
+**Nature:** Produces 2 classical bits.
+
+---
+
+## 5. Send & Correct
+Possible corrections on q₂:
+
+```text
+00 → I
+01 → X
+10 → Z
+11 → XZ
+```
+
+**Nature:** Recovers original state ψ.
+
+---
+
+## Final
+
+```text
+Initial:
+q₀ = ψ
+q₂ = |0⟩
+
+Final:
+q₀ → measured
+q₂ = ψ
+```
+
+**Nature:** State transferred; original destroyed (**No-Cloning preserved**).
+
+---
