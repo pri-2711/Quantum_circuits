@@ -2,6 +2,11 @@
 
 Entanglement is represented using **Bell States**.
 
+Circuits:
+
+Perfect Correlation: 6 (phi +), 7 (phi -)
+
+Perfect Anti-correlation: 8 (psi +), 9 (psi -)
 ---
 
 ## **1. Φ⁺ (Phi-plus)**
@@ -45,12 +50,16 @@ Perfect anti-correlation + phase shift → opposite outcomes (**01**, **10**) wi
 ---
 # QUANTUM ENTANGLEMENT (3-Qubit System)
 
+Circuit: 10 (GHZ state for 3 qubits)
+
 **GHZ States**- (Greenberger-Horne-Zeilinger states) represent type of multi-quvit entangled state, ususally 3 or more qubits, hence show entanglement shared across all qubits together.
 These states are more fraglie since measuring or loosing 1 qubit can destory entanglement of whole system.
 They demonstrate **Global Correlations**, showing full anti-correlation is impossible.
 
 ---
 # QUANTUM TELEPORTATION (3-Qubit System)
+
+Circuit: 11 (teleportation using 3 qubits)
 
 Transfers a quantum state using **entanglement + classical bits**.
 
