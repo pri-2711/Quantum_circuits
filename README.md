@@ -143,3 +143,131 @@ q₂ = ψ
 **Nature:** State transferred; original destroyed (**No-Cloning preserved**).
 
 ---
+# DEUTSCH ALGORITHM (2-Qubit System)
+
+Circuit: 12
+First quantum algorithm showing **quantum speedup**.
+
+---
+
+## **Purpose**
+
+Determines whether a hidden function is:
+
+```text
+Constant  → same outputs
+Balanced  → different outputs
+```
+
+using only **1 oracle query** through **superposition + interference**.
+
+---
+
+## **Classical vs Quantum**
+
+### **Classical**
+
+```text
+Need f(0) and f(1)
+→ 2 evaluations
+```
+
+### **Quantum**
+
+Processes both inputs simultaneously using superposition.
+
+---
+
+## **1. Initial State**
+
+```text
+q₀ = |0⟩
+q₁ = |1⟩
+```
+
+Apply:
+
+```text
+H(q₀)
+X(q₁)
+H(q₁)
+```
+
+State:
+
+```text
+q₀ → (|0⟩ + |1⟩)/√2
+q₁ → (|0⟩ - |1⟩)/√2
+```
+
+**Nature:**
+Creates superposition of both inputs.
+
+---
+
+## **2. Oracle (Uf)**
+
+Oracle:
+
+```text
+Uf|x,y⟩ = |x, y⊕f(x)⟩
+```
+
+For balanced function:
+
+```text
+f(x)=x
+```
+
+Oracle becomes:
+
+```text
+CNOT(q₀ → q₁)
+```
+
+**Nature:**
+Encodes function using phase kickback.
+
+---
+
+## **3. Interference**
+
+Apply:
+
+```text
+H(q₀)
+```
+
+**Nature:**
+Interference removes wrong possibilities and keeps correct result.
+
+---
+
+## **4. Measurement**
+
+Measure:
+
+```text
+q₀
+```
+
+Result:
+
+```text
+0 → Constant
+1 → Balanced
+```
+
+---
+
+## **Final**
+
+```text
+Classical → 2 evaluations
+Quantum   → 1 oracle query
+```
+
+**Nature:**
+Shows how quantum computers use **superposition + interference** for faster computation.
+
+---
