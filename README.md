@@ -280,3 +280,5 @@ Circuit 14 (2 Qubit: generates random numbers between **0 to 3** i.e. 00, 01, 10
 Classical computers generate pseudo-random numbers since algorithm's internal state is unknown.
 
 But quantum measurement gives **true randomness** using superposition and measurement as the randomness comes from nature of quantum physics.
+
+---
